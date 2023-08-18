@@ -50,15 +50,14 @@ body {
 .logo {
   align-self: center;
 
-  min-width: 130px;
-  min-height: 15px;
 
 
-  max-width: 12.5vw;
-  max-height: 1.5vw;
+  max-width: 150px;
+  max-height: 18px;
 
-  margin: 26px 3.37vw;
-  height: 25%;
+
+
+  margin: 2.167vw 3.37vw;
 }
 
 .logo__svg {
@@ -72,6 +71,8 @@ body {
   font-size: 16px;
   line-height: 1;
   color: black;
+
+  margin: 10px;
 
   text-transform: uppercase;
 
@@ -96,6 +97,15 @@ body {
 @media screen and (max-width:1024px) {
   .leng {
     display: none;
+  }
+
+  .header {
+    min-height: 18.75vw;
+  }
+
+  .logo {
+    min-width: 40.625vw;
+    min-height: 4.2vw;
   }
 }
 

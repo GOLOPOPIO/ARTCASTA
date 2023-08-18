@@ -74,12 +74,9 @@ body {
 
 .logo {
   align-self: center;
-  min-width: 130px;
-  min-height: 15px;
-  max-width: 12.5vw;
-  max-height: 1.5vw;
-  margin: 26px 3.37vw;
-  height: 25%;
+  max-width: 150px;
+  max-height: 18px;
+  margin: 2.167vw 3.37vw;
 }
 
 .logo__svg {
@@ -93,6 +90,7 @@ body {
   font-size: 16px;
   line-height: 1;
   color: black;
+  margin: 10px;
   text-transform: uppercase;
   opacity: 40%;
   transition: 0.2s;
@@ -113,6 +111,13 @@ body {
 @media screen and (max-width: 1024px) {
   .leng {
     display: none;
+  }
+  .header {
+    min-height: 18.75vw;
+  }
+  .logo {
+    min-width: 40.625vw;
+    min-height: 4.2vw;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -157,38 +162,35 @@ body {
   top: 0%;
   right: 0;
   z-index: 1000;
-  max-width: 340px;
-  max-height: 900px;
-  width: 0;
-  height: 99vh;
-  background-color: #ebebeb;
-  box-shadow: 0 0 15px #272727;
-  transition: 0.4s linear;
-}
-
-.burger_menu {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  width: 340px;
+  height: 900px;
+  max-width: 0;
+  background-color: #ebebeb;
+  box-shadow: 0 0 15px #272727;
+  transition: 0.2s linear;
 }
 
 .burger_menu.active {
-  width: 100%;
+  max-width: 100%;
 }
 
 .burger__links {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
   gap: 40px;
 }
 
 .burger__link {
   font-family: "Gotham Pro", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2em;
   line-height: 1;
   color: #272727;
   text-transform: uppercase;
@@ -199,6 +201,14 @@ body {
 .burger__link:hover {
   color: #7c5ae1;
   text-decoration: underline;
+}
+
+.burger__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .social__link {
@@ -239,6 +249,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 20px;
 }
 
 .cont {
@@ -253,4 +264,26 @@ body {
 
 .cont:hover {
   color: #7c5ae1;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    min-width: 9.375vw;
+    min-height: 4.6875vw;
+  }
+  .burger_menu {
+    width: 100%;
+    height: 99%;
+  }
+  .burger__link {
+    font-size: 6em;
+  }
+  .cont,
+  .leng__burger,
+  .leng {
+    font-size: 4em;
+  }
+  .burger__social {
+    transform: scale(2);
+  }
 }/*# sourceMappingURL=mainstyle.css.map */
