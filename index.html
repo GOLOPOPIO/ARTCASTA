@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
   <title>ARTCASTA</title>
+
+
 </head>
 
 <body class="noize">
@@ -17,8 +19,8 @@
     <img class="logo" src="img/vector/logo/logo.svg" alt="">
     <div class="header__iner">
       <span>
-        <a href="#" class="leng active" data-leng="rus">rus</a>
-        <a href="#" class="leng" data-leng="eng">eng</a>
+        <a href="#" class="leng active" id="leng_rus">rus</a>
+        <a href="#" class="leng" id="leng_eng">eng</a>
       </span>
 
       <div id="burger_btn">
@@ -34,13 +36,13 @@
 
     <div class="noize burger_menu" id="burger_menu">
       <ul>
-        <a href="#" class="leng__burger active" data-leng="rus">rus</a>
-        <a href="#" class="leng__burger" data-leng="eng">eng</a>
+        <a href="#" class="leng__burger active" id="leng_rus_menu">rus</a>
+        <a href="#" class="leng__burger" id="leng_eng_menu">eng</a>
       </ul>
       <div class="burger__links">
-        <a href="#" class="burger__link">кастинг</a>
-        <a href="#" class="burger__link">команда</a>
-        <a href="#" class="burger__link">kinokasta</a>
+        <a href="#" class="burger__link" id="menu_1"></a>
+        <a href="#" class="burger__link" id="menu_2"></a>
+        <a href="#" class="burger__link" id="menu_3"></a>
       </div>
       <div class="burger__social">
         <a href="#" class="social__link" id="vk">
@@ -64,7 +66,7 @@
 
     </div>
     <script src="js/burger_clic.js"></script>
-
+    <script src="/js/leng.js"></script>
   </header>
 
 </body>

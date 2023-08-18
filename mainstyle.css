@@ -228,7 +228,7 @@ body {
 }
 
 .contacts__iner span {
-  width: 267px;
+  width: 80%;
   height: 1px;
   border-bottom: 1px black solid;
 }
@@ -236,6 +236,8 @@ body {
 .contacts__iner {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .cont {
