@@ -1,8 +1,10 @@
+let ls = location.hostname;
+console.log(ls);
 let url_rus =
-  "http://127.0.0.1:5500/json/leng_rus.json";
+  "http://" + String(location.hostname) + "/json/leng_rus.json";
 let url_eng =
-  "http://127.0.0.1:5500/json/leng_eng.json";
-
+  "http://" + String(location.hostname) + "/json/leng_eng.json";
+console.log(url_rus);
 let leng_rus = document.getElementById('leng_rus');
 let leng_rus_menu = document.getElementById('leng_rus_menu');
 let leng_eng = document.getElementById('leng_eng');
@@ -34,7 +36,6 @@ let updateLanguage = function (url) {
 
   request.onload = function () {
     let json = request.response;
-    console.log(json);
 
     setLanguge(json);
   }
