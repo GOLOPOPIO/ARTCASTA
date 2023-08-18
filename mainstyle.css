@@ -52,7 +52,7 @@ body {
 }
 
 .noize {
-  background-image: url("./img/noize_600x600.png");
+  background-image: url("./img/noize_150x150.png");
   background-repeat: repeat;
   background-size: contain;
 }
