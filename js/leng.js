@@ -1,10 +1,10 @@
 let ls = location.hostname;
-console.log(ls);
+
 let url_rus =
-  "http://" + String(location.hostname) + "/json/leng_rus.json";
+  "./json/leng_rus.json";
 let url_eng =
-  "http://" + String(location.hostname) + "/json/leng_eng.json";
-console.log(url_rus);
+  "./json/leng_eng.json";
+
 let leng_rus = document.getElementById('leng_rus');
 let leng_rus_menu = document.getElementById('leng_rus_menu');
 let leng_eng = document.getElementById('leng_eng');
@@ -29,7 +29,9 @@ let toggle_eng = function () {
 
 let updateLanguage = function (url) {
 
-  var request = new XMLHttpRequest();
+  console.log(url);
+
+  let request = new XMLHttpRequest();
   request.open("GET", url);
   request.responseType = "json";
   request.send();
