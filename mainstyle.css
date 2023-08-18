@@ -155,11 +155,11 @@ body {
 .burger_menu {
   position: absolute;
   top: 0%;
-  right: -100%;
+  right: 0;
   z-index: 1000;
   max-width: 340px;
   max-height: 900px;
-  width: 100%;
+  width: 0;
   height: 99vh;
   background-color: #ebebeb;
   box-shadow: 0 0 15px #272727;
@@ -171,10 +171,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 
 .burger_menu.active {
-  right: 0%;
+  width: 100%;
 }
 
 .burger__links {
