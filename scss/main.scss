@@ -1,0 +1,108 @@
+@import "./fonts/fonts";
+
+$mainFont: 'Gotham Pro', sans-serif;
+$secondFont: 'Raleway', sans-serif;
+// ====== COLOR ====== //
+$black: #272727;
+$magenta: #7c5ae1;
+$white: #ebebeb;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+
+  overflow: hidden;
+}
+
+.noize {
+  background-image: url("/img/noize_600x600.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+// ====== 1920 --- 360 ======
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  align-items: center;
+
+  max-height: 70px;
+
+  box-shadow: 0 0 10px $black;
+}
+
+.header__iner {
+  display: flex;
+  align-items: center;
+
+  gap: 1.6vw;
+}
+
+.logo {
+  align-self: center;
+
+  min-width: 130px;
+  min-height: 15px;
+
+
+  max-width: 12.5vw;
+  max-height: 1.5vw;
+
+  margin: 26px 3.37vw;
+  height: 25%;
+}
+
+.logo__svg {
+  fill: $black;
+}
+
+.leng__burger,
+.leng {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: black;
+
+  text-transform: uppercase;
+
+  opacity: 40%;
+
+  transition: .2s;
+}
+
+.leng__burger.active,
+.leng.active {
+  opacity: 100%;
+}
+
+.leng__burger:hover,
+.leng:hover {
+  opacity: 100%;
+  color: $magenta;
+
+  transform: scale(1.01);
+}
+
+@media screen and (max-width:1024px) {
+  .leng {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .leng__burger {
+    display: none;
+  }
+}
+
+@import "./burger";

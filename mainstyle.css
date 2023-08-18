@@ -1,0 +1,253 @@
+/* Gotham Pro Light (300) */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/scss/fonts/Gotham Pro Light");
+  src: local("Gotham Pro Light"), local("GothamPro-Light"), url("/scss/fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("/scss/fonts/GothamPro-Light.woff") format("woff"), url("/scss/fonts/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/* Gotham Pro Regular (400) */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/scss/fonts/GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"), url("/scss/fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("/scss/fonts/GothamPro.woff") format("woff"), url("/scss/fonts/GothamPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Gotham Pro Medium (500) */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/scss/fonts/GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"), url("/scss/fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("/scss/fonts/GothamPro-Medium.woff") format("woff"), url("/scss/fonts/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* Gotham Pro Bold (700) */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/scss/fonts/GothamPro-Bold.eot");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"), url("/scss/fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("/scss/fonts/GothamPro-Bold.woff") format("woff"), url("/scss/fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Gotham Pro Black (900) */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/scss/fonts/GothamPro-Black.eot");
+  src: local("Gotham Pro Black"), local("GothamPro-Black"), url("/scss/fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("/scss/fonts/GothamPro-Black.woff") format("woff"), url("/scss/fonts/GothamPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  overflow: hidden;
+}
+
+.noize {
+  background-image: url("/img/noize_600x600.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebebeb;
+  align-items: center;
+  max-height: 70px;
+  box-shadow: 0 0 10px #272727;
+}
+
+.header__iner {
+  display: flex;
+  align-items: center;
+  gap: 1.6vw;
+}
+
+.logo {
+  align-self: center;
+  min-width: 130px;
+  min-height: 15px;
+  max-width: 12.5vw;
+  max-height: 1.5vw;
+  margin: 26px 3.37vw;
+  height: 25%;
+}
+
+.logo__svg {
+  fill: #272727;
+}
+
+.leng__burger,
+.leng {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: black;
+  text-transform: uppercase;
+  opacity: 40%;
+  transition: 0.2s;
+}
+
+.leng__burger.active,
+.leng.active {
+  opacity: 100%;
+}
+
+.leng__burger:hover,
+.leng:hover {
+  opacity: 100%;
+  color: #7c5ae1;
+  transform: scale(1.01);
+}
+
+@media screen and (max-width: 1024px) {
+  .leng {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .leng__burger {
+    display: none;
+  }
+}
+.burger {
+  position: relative;
+  align-self: center;
+  z-index: 1003;
+  min-width: 30px;
+  min-height: 15px;
+  width: 4.167vw;
+  height: 2.167vw;
+  max-width: 50px;
+  max-height: 26px;
+  margin: 22px 1vw;
+  stroke: #272727;
+  stroke-width: 2;
+}
+
+.line {
+  transition: 0.3s;
+}
+
+.line_2 {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.burger.active .line {
+  opacity: 0;
+}
+
+.burger.active .line_2 {
+  opacity: 100;
+}
+
+.burger_menu {
+  position: absolute;
+  top: 0%;
+  right: -100%;
+  z-index: 1000;
+  max-width: 340px;
+  max-height: 900px;
+  width: 100%;
+  height: 99vh;
+  background-color: #ebebeb;
+  box-shadow: 0 0 15px #272727;
+  transition: 0.4s linear;
+}
+
+.burger_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.burger_menu.active {
+  right: 0%;
+}
+
+.burger__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.burger__link {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272727;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.burger__link:hover {
+  color: #7c5ae1;
+  text-decoration: underline;
+}
+
+.social__link {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+.social__link .default {
+  position: absolute;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.social__link .hover {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.social__link:hover .hover {
+  opacity: 1;
+}
+
+.social__link:hover .default {
+  opacity: 0;
+}
+
+.contacts__iner span {
+  width: 267px;
+  height: 1px;
+  border-bottom: 1px black solid;
+}
+
+.contacts__iner {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  margin: 20px auto 0;
+  color: black;
+  transition: 0.1s;
+}
+
+.cont:hover {
+  color: #7c5ae1;
+}/*# sourceMappingURL=mainstyle.css.map */
