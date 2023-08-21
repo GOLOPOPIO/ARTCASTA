@@ -1,5 +1,17 @@
 {
   "menu_1": "кастинг",
   "menu_2": "команда",
-  "menu_3": "kinokasta"
+  "menu_3": "kinokasta",
+  "about_us_titel": "о нас",
+  "about_us_text": "Наш продакшн оказывает полный спектр услуг для съёмок рекламы и кино. Кастинг отдел осуществляет профессиональный подбор актёров, транспорта, животных под любые запросы. Так же мы предоставляем высококвалифицированных сотрудников для работы на съёмочных площадках. У нас есть все, что вы ищите.",
+  "contacts_titel": "контакты",
+  "contacts_andress": "г. Москва, ул. Подъемная, д. 12 А, офис 210",
+  "conection_titel": "обратная связь",
+  "cont_btn": "Оставить контакты",
+  "img": {
+    "main_btn_casting_hover": "./img/png/casting_rus_hover.png",
+    "main_btn_casting_default": "./img/png/casting_rus.png",
+    "main_btn_team_hover": "./img/png/team_rus_hover.png",
+    "main_btn_team_default": "./img/png/team_rus.png"
+  }
 }

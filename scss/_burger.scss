@@ -1,4 +1,6 @@
 .burger {
+  cursor: pointer;
+
   position: relative;
   align-self: center;
   z-index: 1003;
@@ -12,7 +14,7 @@
   max-width: 50px;
   max-height: 26px;
 
-  margin: 22px 1vw;
+  margin: 22px 0;
 
   stroke: $black;
   stroke-width: 2;
@@ -37,7 +39,7 @@
 
 .burger_menu {
   position: absolute;
-  top: -0%;
+  top: 0;
   right: 0;
   z-index: 1000;
 
@@ -47,20 +49,23 @@
   align-items: center;
   overflow: hidden;
 
-  width: 340px;
-  height: 900px;
-
+  width: 15.6vw;
+  height: 95vh;
   max-width: 0;
 
-  background-color: #ebebeb;
-  box-shadow: 0 0 15px $black;
+  max-height: 900px;
+
+  background-color: $white;
 
   transition: .2s linear;
 }
 
 .burger_menu.active {
   max-width: 100%;
+  width: 340px;
+  overflow: auto;
 }
+
 
 .burger__links {
   display: flex;
@@ -75,7 +80,7 @@
 .burger__link {
   font-family: $mainFont;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1;
 
   color: $black;
@@ -133,8 +138,8 @@
 
 .contacts__iner span {
   width: 80%;
-  height: 1px;
-  border-bottom: 1px black solid;
+  height: 0px;
+  border-bottom: 2px black solid;
 }
 
 .contacts__iner {
@@ -170,7 +175,10 @@
 
   .burger_menu {
     width: 100%;
-    height: 99%;
+  }
+
+  .burger_menu.active body {
+    overflow: hidden;
   }
 
   .burger__link {
@@ -186,4 +194,13 @@
   .burger__social {
     transform: scale(2);
   }
+}
+
+@media screen and (max-height:820px) and (max-width:1024px) {
+  .burger_menu {
+    overflow: scroll;
+    padding-top: 100vh;
+    gap: 10vh;
+  }
+
 }

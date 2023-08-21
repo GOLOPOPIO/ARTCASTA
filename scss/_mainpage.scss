@@ -1,0 +1,250 @@
+.about__us {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding-top: 50px;
+
+  gap: 60px;
+}
+
+.about__us h2 {
+  font-family: $mainFont;
+  font-weight: 900;
+  font-size: 1.33333em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about__us p {
+  font-family: $secondFont;
+  font-weight: 400;
+  font-size: 1.111111em;
+  line-height: 1.333333em;
+
+  max-width: 794px;
+
+  text-decoration: none;
+}
+
+.main_button {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+
+  min-width: 1200px;
+  min-height: 610px;
+
+  margin: 245px auto;
+}
+
+.main_button a {
+  position: absolute;
+  display: flex;
+  top: 0;
+  z-index: 900;
+}
+
+.main_button a img {
+  position: absolute;
+  display: flex;
+  top: 0;
+  z-index: 900;
+}
+
+.casting__btn {
+  right: 590px;
+}
+
+.team__btn {
+  left: 0;
+}
+
+.main__btn_hover {
+  opacity: 0;
+
+  transition: .3s;
+}
+
+.casting__btn:hover .main__btn_hover,
+.team__btn:hover .main__btn_hover {
+  opacity: 1;
+}
+
+
+.casting__btn:hover .main__btn_default,
+.team__btn:hover .main__btn_default {
+  opacity: 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 93px;
+  padding-bottom: 116px;
+  gap: 75px;
+}
+
+.contats__info {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+
+  position: relative;
+
+  gap: 30px;
+}
+
+.map {
+  position: absolute;
+  width: 600px;
+  max-width: 0px;
+
+  top: 0%;
+  left: 100%;
+
+  transition: 1s;
+}
+
+.adress:hover .map {
+  max-width: 600px;
+}
+
+.contats__info h2 {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 1.5em;
+
+  margin-bottom: 30px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contats__info p {
+  cursor: pointer;
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 1.5em;
+
+  text-decoration: underline;
+
+  max-width: 326px;
+
+  transition: .2s;
+}
+
+.contats__info p:hover {
+  color: $magenta;
+}
+
+.contats__info .social {
+  display: flex;
+  text-decoration: none;
+
+  margin-top: 10px;
+
+  gap: 24px;
+}
+
+.contacts__conection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url("/img/vector/bg_conect.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  padding: 32px 40px;
+  gap: 20px;
+}
+
+.contacts__conection h2 {
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 1.5em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+}
+
+.contacts__conection input,
+.contacts__conection textarea {
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 1em;
+
+  text-decoration: none;
+  text-transform: none;
+
+
+  background-color: rgba($color: #fff, $alpha: 0);
+  box-shadow: none;
+  border: 1px solid black;
+
+  padding: 13px;
+
+  width: 310px;
+  height: 40px;
+
+  resize: none;
+}
+
+.contacts__conection textarea {
+  height: 110px;
+}
+
+.contacts__conection input::placeholder,
+.contacts__conection textarea::placeholder {
+  color: rgba($color: $black, $alpha: .4);
+
+  transition: 3s;
+}
+
+.contacts__conection input:hover,
+.contacts__conection textarea:hover {
+  border: 2px solid black;
+}
+
+.contacts__conection input:focus,
+.contacts__conection textarea:focus {
+  border: 2px solid black;
+}
+
+.contacts__conection input:focus::placeholder,
+.contacts__conection textarea:focus::placeholder {
+  color: rgba($color: $black, $alpha: 0);
+}
+
+.contacts__conection button {
+  font-family: $secondFont;
+  font-weight: 600;
+  font-size: 1em;
+
+  text-decoration: none;
+  text-transform: none;
+
+  text-align: center;
+
+  margin-top: 20px;
+
+  background-color: rgba($color: #fff, $alpha: 0);
+  border: 1px solid $black;
+
+  width: 186px;
+  height: 50px;
+
+  transition: .1s;
+}
+
+.contacts__conection button:hover {
+  color: $white;
+  background-color: $magenta;
+  border: $magenta;
+}

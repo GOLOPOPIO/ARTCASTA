@@ -1,5 +1,17 @@
 {
   "menu_1": "casting",
   "menu_2": "team",
-  "menu_3": "kinokasta"
+  "menu_3": "kinokasta",
+  "about_us_titel": "about us",
+  "about_us_text": "Our production provides a full range of services for filming commercials and films. The casting department carries out a professional selection of actors, transport, animals for any requests. We also provide highly qualified employees to work on the set. We have everything you are looking for.",
+  "contacts_titel": "contacts",
+  "contacts_andress": "Moscow, st. Lifting, d. 12 A, office 210",
+  "conection_titel": "Feedback",
+  "cont_btn": "Leave contacts",
+  "img": {
+    "main_btn_casting_hover": "./img/png/casting_eng_hover.png",
+    "main_btn_casting_default": "./img/png/casting_eng.png",
+    "main_btn_team_hover": "./img/png/team_eng_hover.png",
+    "main_btn_team_default": "./img/png/team_eng.png"
+  }
 }
