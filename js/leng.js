@@ -1,5 +1,3 @@
-
-
 let url_rus =
   "./json/leng_rus.json";
 let url_eng =
@@ -31,9 +29,6 @@ let toggle_eng = function () {
 }
 
 let updateLanguage = function (url) {
-
-  console.log(url);
-
   let request = new XMLHttpRequest();
   request.open("GET", url);
   request.responseType = "json";
@@ -64,8 +59,6 @@ function setLanguge(json) {
     }
     document.getElementById(key).textContent = json[key];
   }
-
-
 }
 
 const startLeng = () => {

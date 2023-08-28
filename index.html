@@ -10,8 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
 
   <title>ARTCASTA</title>
-
-  <script src="./js/main.js" type="module"></script>
+  <script src="./js/jquery-3.7.0.min.js"></script>
 
 </head>
 
@@ -19,11 +18,11 @@
 
   <header class="header noize shadow">
 
-    <img class="logo" src="./img/vector/logo/logo.svg" alt="">
+    <a href=""><img class="logo" src="./img/vector/logo/logo.svg" alt=""></a>
     <div class="header__iner">
       <span class="leng__iner">
-        <a href="#" class="leng active" id="leng_rus">rus</a>
-        <a href="#" class="leng" id="leng_eng">eng</a>
+        <p class="leng active" id="leng_rus">rus</p>
+        <p class="leng" id="leng_eng">eng</p>
       </span>
 
       <div id="burger_btn">
@@ -39,13 +38,13 @@
 
     <div class="noize burger_menu shadow" id="burger_menu">
       <ul>
-        <a href="#" class="leng__burger active" id="leng_rus_menu">rus</a>
-        <a href="#" class="leng__burger" id="leng_eng_menu">eng</a>
+        <p class="leng__burger active" id="leng_rus_menu">rus</p>
+        <p class="leng__burger" id="leng_eng_menu">eng</p>
       </ul>
       <div class="burger__links">
-        <a href="#" class="burger__link" id="menu_1"></a>
-        <a href="#" class="burger__link" id="menu_2"></a>
-        <a href="#" class="burger__link" id="menu_3"></a>
+        <p class="burger__link" id="burger_cast"></p>
+        <p class="burger__link" id="burger_team"></p>
+        <a href="" class="burger__link" id="menu_3"></a>
       </div>
       <div class="burger__social">
         <a href="#" class="social__link" id="vk">
@@ -72,152 +71,14 @@
   </header>
 
   <div class="main__content">
-    <div class="titel">
 
-    </div>
-    <div class="about__us">
-      <h2 id="about_us_titel">о нас</h2>
-      <p id="about_us_text">Наш продакшн оказывает полный спектр услуг для съёмок рекламы и кино. Кастинг отдел
-        осуществляет
-        профессиональный подбор актёров, транспорта, животных под любые запросы. Так же мы предоставляем
-        высококвалифицированных сотрудников для работы на съёмочных площадках. У нас есть все, что вы ищите.</p>
-    </div>
-    <div class="main_button">
-      <a href="#" class="casting__btn" id="main_btn_cast">
-        <img class="main__btn_default" src="./img/png/castinr_rus.png" alt="">
-        <img class="main__btn_hover" src="./img/png/casting_rus_hover.png" alt="">
-      </a>
-
-      <a href="#" class="team__btn" id="main_btn_team">
-        <img class="main__btn_default" src="./img/png/team_rus.png" alt="">
-        <img class="main__btn_hover" src="./img/png/tean_rus_hover.png" alt="">
-      </a>
-
-    </div>
-    <div class="contacts">
-      <div class="contats__info">
-        <h2 class="titel" id="contacts_titel">контакты</h2>
-        <div class="map" id="yandex_map">
-          <div style="position:relative;overflow:hidden;"><a
-              href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
-              style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
-              href="https://yandex.ru/maps/213/moscow/house/podyomnaya_ulitsa_12a/Z04YcQdoSUMHQFtvfXtyeHVgbQ==/?ll=37.708059%2C55.739939&utm_medium=mapframe&utm_source=maps&z=17.13"
-              style="color:#eee;font-size:12px;position:absolute;top:14px;">Подъёмная улица, 12А —
-              Яндекс Карты</a><iframe
-              src="https://yandex.ru/map-widget/v1/?ll=37.708059%2C55.739939&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwMTczNhI_0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCf0L7QtNGK0ZHQvNC90LDRjyDRg9C70LjRhtCwLCAxMtCQIgoND9UWQhWz9V5C&z=17.13"
-              width="600" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-        </div>
-        <p class="adress" id="contacts_andress">
-          г. Москва, ул. Подъемная, д. 12 А, офис 210
-        </p>
-        <p class="mail" id="contacts_mail">artcasta@mail.com</p>
-        <p class="number" id="contacts_id">+7(977) 999-43-21</p>
-        <p class="social">
-          <a href="#" class="social__link" id="vk">
-            <img class="default" src="./img/png/social_vk.png" alt="">
-            <img class="hover" src="./img/png/social_vk_hover.png" alt="">
-          </a>
-          <a href="#" class="social__link" id="tg">
-            <img class="default" src="./img/png/social_tg.png" alt="">
-            <img class="hover" src="./img/png/social_tg_hover.png" alt="">
-          </a>
-          <a href="#" class="social__link" id="wa">
-            <img class="default" src="./img/png/social_wa.png" alt="">
-            <img class="hover" src="./img/png/social_wa_hover.png" alt="">
-          </a>
-        </p>
-      </div>
-
-      <div class="contacts__conection">
-        <h2 id="conection_titel">обратная связь</h2>
-        <input type="text" placeholder="Как к Вам обращаться?" autocomplete="on" class="name">
-        <input type="tel" placeholder=+7(___)___-__-__" autocomplete="on" class="number">
-        <textarea class="coment" placeholder="Комментарий" autocomplete="off" class="about" maxlength="60"></textarea>
-        <button id="cont_btn">Оставить контакты</button>
-      </div>
-    </div>
-    <div class="partners">
-      <div class="partners__titel">ПАРТНЕРЫ</div>
-      <div class="partners__links">
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="partner">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-      </div>
-    </div>
   </div>
 
+  <script src="./js/navigation.js"></script>
 
   <footer class="footer">
-
+    <a href="#">DISIGN power by VladosPerdos</a>
+    <a href="#">Creater ANIGILYATOR</a>
   </footer>
 
 </body>

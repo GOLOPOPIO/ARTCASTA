@@ -33,6 +33,16 @@ body {
   background-color: $white;
 }
 
+svg {
+  fill: inherit;
+  stroke: inherit;
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
 
 .noize {
   background-image: url("./img/noize_150x150.png");
@@ -75,6 +85,8 @@ body {
 }
 
 .logo {
+  cursor: pointer;
+
   align-self: center;
 
   max-width: 150px;
@@ -89,6 +101,9 @@ body {
 
 .leng__burger,
 .leng {
+  cursor: pointer;
+  display: inline-block;
+
   font-family: $mainFont;
   font-weight: 700;
   font-size: 16px;
@@ -122,9 +137,42 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 0;
+  padding: 0;
 
   max-width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 15px;
+
+  background-color: rgba($color: #272727, $alpha: .5);
+  transition: .6s;
+
+  gap: 10px;
+}
+
+.footer:hover {
+  background-color: rgba($color: #272727, $alpha: .9);
+}
+
+.footer a {
+  font-family: $mainFont;
+  font-size: 10px;
+  font-weight: 900;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: $white;
+
+  transition: .2s;
+}
+
+.footer a:hover {
+  color: $magenta;
 }
 
 @media screen and (max-width:1024px) {
@@ -154,4 +202,5 @@ body {
 }
 
 @import "./burger";
-@import "./mainpage"
+@import "./mainpage";
+@import "./parthers";

@@ -1,0 +1,92 @@
+{
+  "parther_1": {
+    "def_img": "./img/vector/parthers/partner_1_def.svg",
+    "hov_img": "./img/vector/parthers/partner_1_hov.svg",
+    "link": "#"
+  },
+  "parther_2": {
+    "def_img": "./img/vector/parthers/partner_2_def.svg",
+    "hov_img": "./img/vector/parthers/partner_2_hov.svg",
+    "link": "#"
+  },
+  "parther_3": {
+    "def_img": "./img/vector/parthers/partner_3_def.svg",
+    "hov_img": "./img/vector/parthers/partner_3_hov.svg",
+    "link": "#"
+  },
+  "parther_4": {
+    "def_img": "./img/vector/parthers/partner_4_def.svg",
+    "hov_img": "./img/vector/parthers/partner_4_hov.svg",
+    "link": "#"
+  },
+  "parther_5": {
+    "def_img": "./img/vector/parthers/partner_5_def.svg",
+    "hov_img": "./img/vector/parthers/partner_5_hov.svg",
+    "link": "#"
+  },
+  "parther_6": {
+    "def_img": "./img/vector/parthers/partner_6_def.svg",
+    "hov_img": "./img/vector/parthers/partner_6_hov.svg",
+    "link": "#"
+  },
+  "parther_7": {
+    "def_img": "./img/vector/parthers/partner_7_def.svg",
+    "hov_img": "./img/vector/parthers/partner_7_hov.svg",
+    "link": "#"
+  },
+  "parther_8": {
+    "def_img": "./img/vector/parthers/partner_8_def.svg",
+    "hov_img": "./img/vector/parthers/partner_8_hov.svg",
+    "link": "#"
+  },
+  "parther_9": {
+    "def_img": "./img/vector/parthers/partner_9_def.svg",
+    "hov_img": "./img/vector/parthers/partner_9_hov.svg",
+    "link": "#"
+  },
+  "parther_10": {
+    "def_img": "./img/vector/parthers/partner_10_def.svg",
+    "hov_img": "./img/vector/parthers/partner_10_hov.svg",
+    "link": "#"
+  },
+  "parther_11": {
+    "def_img": "./img/vector/parthers/partner_11_def.svg",
+    "hov_img": "./img/vector/parthers/partner_11_hov.svg",
+    "link": "#"
+  },
+  "parther_12": {
+    "def_img": "./img/vector/parthers/partner_12_def.svg",
+    "hov_img": "./img/vector/parthers/partner_12_hov.svg",
+    "link": "#"
+  },
+  "parther_13": {
+    "def_img": "./img/vector/parthers/partner_13_def.svg",
+    "hov_img": "./img/vector/parthers/partner_13_hov.svg",
+    "link": "#"
+  },
+  "parther_14": {
+    "def_img": "./img/vector/parthers/partner_14_def.svg",
+    "hov_img": "./img/vector/parthers/partner_14_hov.svg",
+    "link": "#"
+  },
+  "parther_15": {
+    "def_img": "./img/vector/parthers/partner_15_def.svg",
+    "hov_img": "./img/vector/parthers/partner_15_hov.svg",
+    "link": "#"
+  },
+  "parther_16": {
+    "def_img": "./img/vector/parthers/partner_16_def.svg",
+    "hov_img": "./img/vector/parthers/partner_16_hov.svg",
+    "link": "#"
+  },
+  "parther_17": {
+    "def_img": "./img/vector/parthers/partner_17_def.svg",
+    "hov_img": "./img/vector/parthers/partner_17_hov.svg",
+    "link": "#"
+  },
+  "parther_18": {
+    "def_img": "./img/vector/parthers/partner_18_def.svg",
+    "hov_img": "./img/vector/parthers/partner_18_hov.svg",
+    "link": "#"
+  }
+}

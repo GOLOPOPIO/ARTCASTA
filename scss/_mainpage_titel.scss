@@ -1,0 +1,112 @@
+$perpl: #7C5AE1;
+$dark_blue: #0047B1;
+$light_blue: #0098B9;
+$green: #5ABA0F;
+$yelow: #D0C802;
+$orange: #F07F3F;
+$red: #EB0000;
+$dark: #000000;
+
+.titel__ {
+  width: 1280px;
+  height: 100vh;
+
+  align-items: center;
+
+  background-image: url("../img/vector/logo/tringle.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.char {
+  position: relative;
+  height: 136px;
+  padding: 18px;
+  margin-top: 48.5vh;
+  width: 100%;
+}
+
+.char div {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+
+  transition: .7s linear;
+}
+
+.perpl {
+  fill: rgba($color: $perpl, $alpha: 0);
+  stroke: $perpl;
+  stroke-width: 1px;
+
+  top: 0;
+  left: 0;
+}
+
+.dark_blue {
+  fill: rgba($color: $dark_blue, $alpha: 0);
+  stroke: $dark_blue;
+  stroke-width: 1px;
+
+  top: 3px;
+  left: 3px;
+}
+
+.light_blue {
+  fill: rgba($color: $light_blue, $alpha: 0);
+  stroke: $light_blue;
+  stroke-width: 1px;
+
+  top: 6px;
+  left: 6px;
+}
+
+.green {
+  fill: rgba($color: $green, $alpha: 0);
+  stroke: $green;
+  stroke-width: 1px;
+
+  top: 9px;
+  left: 9px;
+}
+
+.yelow {
+  fill: rgba($color: $yelow, $alpha: 0);
+  stroke: $yelow;
+  stroke-width: 1px;
+
+  top: 12px;
+  left: 12px;
+}
+
+.orange {
+  fill: rgba($color: $orange, $alpha: 0);
+  stroke: $orange;
+  stroke-width: 1px;
+
+  top: 15px;
+  left: 15px;
+}
+
+.red {
+  fill: rgba($color: $red, $alpha: 0);
+  stroke: $red;
+  stroke-width: 1px;
+
+  top: 18px;
+  left: 18px;
+}
+
+.total_fill {
+  fill: rgba($color: $dark, $alpha: 1);
+  stroke: $dark;
+  stroke-width: 0px;
+
+  top: 21px;
+  left: 21px;
+}
+
+.anim {
+  top: 21px;
+  left: 21px;
+}
