@@ -53,7 +53,6 @@ path {
   box-shadow: 0 0 5px $black;
 }
 
-// ====== 1920 --- 360 ======
 .header {
   display: flex;
   justify-content: space-between;
@@ -204,3 +203,4 @@ path {
 @import "./burger";
 @import "./mainpage";
 @import "./parthers";
+@import "./team";

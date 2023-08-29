@@ -384,7 +384,7 @@ path {
   }
 }
 .titel__ {
-  width: 1280px;
+  width: 1200px;
   height: 100vh;
   align-items: center;
   background-image: url("../img/vector/logo/tringle.svg");
@@ -611,7 +611,7 @@ path {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/img/vector/bg_conect.svg");
+  background-image: url("./img/vector/bg_conect.svg");
   background-size: contain;
   background-repeat: no-repeat;
   padding: 32px 40px;
@@ -706,7 +706,7 @@ path {
 .partners {
   width: 100%;
   height: 414px;
-  padding: 0px 85px;
+  padding: 0px 1vw;
   margin-bottom: 60px;
 }
 
@@ -752,4 +752,147 @@ path {
 
 .partner:hover .partner__hover__img {
   opacity: 1;
+}
+
+.team {
+  width: 1200px;
+}
+
+.team img {
+  width: 360px;
+  height: 450px;
+}
+
+.one_pesone_left,
+.one_person_right,
+.two_persone_centr,
+.two_persone_around {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  position: relative;
+  opacity: 1;
+}
+
+.one_pesone_left,
+.one_person_right {
+  align-items: end;
+}
+
+.one_person_right {
+  text-align: end;
+  margin: 0 230px 0 145px;
+}
+
+.one_pesone_left {
+  margin: 0 145px 0 200px;
+}
+
+.two_persone_centr,
+.two_persone_around {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+}
+
+.persone__photo {
+  position: relative;
+  width: 360px;
+  height: 450px;
+}
+
+.persone__photo_def,
+.persone__photo_hov {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.persone__photo_hov {
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.one_pesone_left:hover .persone__photo_hov,
+.one_person_right:hover .persone__photo_hov,
+.two_persone_centr:hover .persone__photo_hov,
+.two_persone_around:hover .persone__photo_hov {
+  opacity: 1;
+}
+
+.one_pesone_left .persone__about {
+  margin-left: 20px;
+  max-width: 407px;
+}
+
+.one_person_right .persone__about {
+  margin-right: 20px;
+  max-width: 407px;
+}
+
+.two_persone_around .persone__about {
+  padding: 0 20px;
+  max-width: 400px;
+}
+
+.two_persone_around__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first {
+  text-align: start;
+}
+
+.second {
+  text-align: end;
+}
+
+.persone__about_titel {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1.9em;
+  line-height: 1em;
+}
+
+.persone__about_job_titel {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-top: 14px;
+}
+
+.two_persone_around {
+  display: flex;
+}
+
+.two_persone_centr {
+  gap: 20px;
+}
+
+.two_persone_centr .persone__about {
+  max-width: 183px;
+}
+
+.team h1 {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 100px 0;
+}
+
+.team h2 {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 150px 0 100px;
+}
+
+.team h5 {
+  width: 100px;
+  height: 50px;
 }/*# sourceMappingURL=mainstyle.css.map */

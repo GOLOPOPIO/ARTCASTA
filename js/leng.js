@@ -1,7 +1,9 @@
-let url_rus =
+const url_rus =
   "./json/leng_rus.json";
-let url_eng =
+const url_eng =
   "./json/leng_eng.json";
+
+let active = url_rus;
 
 let leng_rus = '';
 let leng_rus_menu = '';
@@ -16,16 +18,16 @@ let toggle_rus = function () {
   leng_rus_menu.classList.add('active');
   leng_eng.classList.remove('active');
   leng_eng_menu.classList.remove('active');
-
-  updateLanguage(url_rus);
+  active = url_rus;
+  updateLanguage(active);
 }
 let toggle_eng = function () {
   leng_rus.classList.remove('active');
   leng_rus_menu.classList.remove('active');
   leng_eng.classList.add('active');
   leng_eng_menu.classList.add('active');
-
-  updateLanguage(url_eng);
+  active = url_eng;
+  updateLanguage(active);
 }
 
 let updateLanguage = function (url) {
@@ -54,10 +56,11 @@ function setLanguge(json) {
         json[key]["main_btn_team_default"];
       main_btn_team.querySelector(".main__btn_hover").src =
         json[key]["main_btn_team_hover"];
-
-      return;
     }
-    document.getElementById(key).textContent = json[key];
+    try {
+      document.getElementById(key).textContent = json[key];
+    }
+    catch { }
   }
 }
 
@@ -75,7 +78,7 @@ const startLeng = () => {
   leng_eng.addEventListener('click', toggle_eng);
   leng_eng_menu.addEventListener('click', toggle_eng);
 
-  updateLanguage(url_rus);
+  updateLanguage(active);
 };
 
 export default startLeng;

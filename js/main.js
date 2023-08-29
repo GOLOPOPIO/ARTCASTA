@@ -14,14 +14,17 @@ const teamPage = "./pages/teamPage.html";
 
 const loadHome = () => {
   $(content).load(homePage);
+  startLang();
 }
 
 const loadCast = () => {
   $(content).load(castPage);
+  startLang();
 }
 
 const loadTeam = () => {
   $(content).load(teamPage);
+  startLang();
 }
 
 const burger_cast = document.getElementById("burger_cast");
