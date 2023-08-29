@@ -586,17 +586,22 @@ path {
   text-transform: uppercase;
 }
 
-.contats__info p {
+.contats__info .p {
   cursor: pointer;
   font-family: "Gotham Pro", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
+  padding: 3px;
   text-decoration: underline;
   max-width: 326px;
   transition: 0.2s;
 }
 
-.contats__info p:hover {
+.contats__info .hover {
+  color: #7c5ae1;
+}
+
+.contats__info .p:hover {
   color: #7c5ae1;
 }
 
@@ -683,6 +688,7 @@ path {
 }
 
 .contacts__conection button {
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 1em;
@@ -712,8 +718,8 @@ path {
 
 .partners__titel {
   font-family: "Gotham Pro", sans-serif;
-  font-weight: 900;
-  font-size: 1em;
+  font-weight: 700;
+  font-size: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 4vw;
@@ -799,6 +805,8 @@ path {
   position: relative;
   width: 360px;
   height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .persone__photo_def,
@@ -831,11 +839,12 @@ path {
 }
 
 .two_persone_around .persone__about {
-  padding: 0 20px;
+  padding: 0 10px;
   max-width: 400px;
 }
 
 .two_persone_around__about {
+  width: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

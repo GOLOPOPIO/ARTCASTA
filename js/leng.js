@@ -1,3 +1,5 @@
+import loadIMG from "./img_load.js";
+
 const url_rus =
   "./json/leng_rus.json";
 const url_eng =
@@ -41,27 +43,25 @@ let updateLanguage = function (url) {
 
     setLanguge(json);
   }
+
+  if (active === url_rus) {
+    return "rus";
+  } else if (active === url_eng) {
+    return "eng";
+  }
 }
 
 function setLanguge(json) {
   let key = '';
   for (key in json) {
-    if (key === "img") {
-      main_btn_cast.querySelector(".main__btn_default").src =
-        json[key]["main_btn_casting_default"];
-      main_btn_cast.querySelector(".main__btn_hover").src =
-        json[key]["main_btn_casting_hover"];
-
-      main_btn_team.querySelector(".main__btn_default").src =
-        json[key]["main_btn_team_default"];
-      main_btn_team.querySelector(".main__btn_hover").src =
-        json[key]["main_btn_team_hover"];
-    }
     try {
       document.getElementById(key).textContent = json[key];
     }
-    catch { }
+    catch {
+      // console.log(key, " id error"); 
+    }
   }
+  // loadIMG();
 }
 
 const startLeng = () => {
@@ -78,7 +78,15 @@ const startLeng = () => {
   leng_eng.addEventListener('click', toggle_eng);
   leng_eng_menu.addEventListener('click', toggle_eng);
 
-  updateLanguage(active);
+  let leng = updateLanguage(active);
+  return leng;
 };
 
 export default startLeng;
+export const getLeng = () => {
+  if (active === url_rus) {
+    return "rus";
+  } else if (active === url_eng) {
+    return "eng";
+  }
+}

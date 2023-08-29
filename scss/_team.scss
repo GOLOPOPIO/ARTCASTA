@@ -45,6 +45,8 @@
   position: relative;
   width: 360px;
   height: 450px;
+
+  object-fit: contain;
 }
 
 .persone__photo_def,
@@ -79,11 +81,12 @@
 }
 
 .two_persone_around .persone__about {
-  padding: 0 20px;
+  padding: 0 10px;
   max-width: 400px;
 }
 
 .two_persone_around__about {
+  width: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

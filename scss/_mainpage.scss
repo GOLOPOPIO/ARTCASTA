@@ -128,11 +128,13 @@
   text-transform: uppercase;
 }
 
-.contats__info p {
+.contats__info .p {
   cursor: pointer;
   font-family: $mainFont;
   font-weight: 400;
   font-size: 1.5em;
+
+  padding: 3px;
 
   text-decoration: underline;
 
@@ -141,7 +143,11 @@
   transition: .2s;
 }
 
-.contats__info p:hover {
+.contats__info .hover {
+  color: $magenta;
+}
+
+.contats__info .p:hover {
   color: $magenta;
 }
 
@@ -231,6 +237,7 @@
 }
 
 .contacts__conection button {
+  cursor: pointer;
   font-family: $secondFont;
   font-weight: 600;
   font-size: 1em;

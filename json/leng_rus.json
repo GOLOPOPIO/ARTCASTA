@@ -36,11 +36,5 @@
   "team_11_name": "Костромцов Илья",
   "team_11_job_titel": "Куратор проекта",
   "team_12_name": "Мудруч Родион",
-  "team_12_job_titel": "Второй режиссер",
-  "img": {
-    "main_btn_casting_hover": "./img/png/casting_rus_hover.png",
-    "main_btn_casting_default": "./img/png/casting_rus.png",
-    "main_btn_team_hover": "./img/png/team_rus_hover.png",
-    "main_btn_team_default": "./img/png/team_rus.png"
-  }
+  "team_12_job_titel": "Второй режиссер"
 }

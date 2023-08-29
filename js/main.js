@@ -1,10 +1,9 @@
 import startLang from "./leng.js";
 import startToggle from "./clic.js";
+import toggle from "./clic.js";
 import startPartners from "./partners.js";
+import loadIMG from "./img_load.js";
 
-startToggle();
-startLang();
-startPartners();
 
 const content = document.querySelector(".main__content");
 
@@ -12,27 +11,42 @@ const homePage = "./pages/homePage.html";
 const castPage = "./pages/castPage.html";
 const teamPage = "./pages/teamPage.html";
 
+$(content).load(homePage);
+
+
 const loadHome = () => {
-  $(content).load(homePage);
-  startLang();
+  load(homePage);
 }
 
 const loadCast = () => {
-  $(content).load(castPage);
-  startLang();
+  load(castPage);
 }
 
 const loadTeam = () => {
-  $(content).load(teamPage);
+  load(teamPage);
+}
+const load = (page) => {
+  $(content).load(page);
+  window.scrollTo(0, 0);
   startLang();
+  loadIMG();
 }
 
-const burger_cast = document.getElementById("burger_cast");
-const card_cast = document.getElementById("main_btn_cast");
-const burger_team = document.getElementById("burger_team");
-const card_team = document.getElementById("main_btn_team");
+const start = () => {
+  const burger_cast = document.getElementById("burger_cast");
+  const card_cast = document.getElementById("main_btn_cast");
+  const burger_team = document.getElementById("burger_team");
+  const card_team = document.getElementById("main_btn_team");
 
-burger_cast.addEventListener('click', loadCast);
-card_cast.addEventListener('click', loadCast);
-burger_team.addEventListener('click', loadTeam);
-card_team.addEventListener('click', loadTeam);
+  burger_cast.addEventListener('click', loadCast);
+  card_cast.addEventListener('click', loadCast);
+  burger_team.addEventListener('click', loadTeam);
+  card_team.addEventListener('click', loadTeam);
+
+  startToggle();
+  startLang();
+  startPartners();
+  loadIMG();
+}
+export default start;
+
