@@ -1,0 +1,113 @@
+.casting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  font-size: 16px;
+
+  margin-top: 70px;
+  padding: 30px 0px;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 100px 230px 150px 202px;
+}
+
+.casting h2 {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  align-self: baseline;
+  margin-bottom: 30px;
+}
+
+.casting p {
+  font-family: $secondFont;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.2em;
+  max-width: 360px;
+
+  padding: 168px 12px;
+
+}
+
+.casting .contacts__conection {
+  background-image: url("./img/vector/bg_connect_cast.svg");
+}
+
+.casting .contacts__conection h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.casting h4 {
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+
+  margin-bottom: 100px;
+
+  align-self: baseline;
+}
+
+.cast_dir {
+  width: 100%;
+}
+
+.cast_dir .titel {
+  align-self: baseline
+}
+
+@import "./filmcards";
+
+.big_row,
+.small_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.casting .more_cast,
+.casting .more_plane {
+  cursor: pointer;
+  font-family: $secondFont;
+  font-weight: 600;
+  font-size: 1em;
+
+  text-decoration: none;
+  text-transform: none;
+
+
+  text-align: center;
+
+  margin: 40px 512px 230px;
+
+  background-color: rgba($color: #fff, $alpha: 0);
+  border: 1px solid $black;
+
+  width: 175px;
+  height: 50px;
+
+  transition: .1s;
+}
+
+.casting .more_plane {
+  margin-bottom: 0px;
+}
+
+.casting .more_cast:hover,
+.casting .more_plane:hover {
+  color: $white;
+  background-color: $magenta;
+  border: $magenta;
+}

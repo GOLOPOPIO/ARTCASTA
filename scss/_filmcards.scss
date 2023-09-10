@@ -1,0 +1,173 @@
+$tran: .5s;
+
+.film_card_big {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row: 1fr;
+  grid-column: 1fr;
+  padding: 20px;
+
+  margin-top: 20px;
+
+  width: 550px;
+  height: 310px;
+
+  border: solid 1px $black;
+  overflow: hidden;
+}
+
+.film_card_big h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.film_card_big .name {
+  font-family: $mainFont;
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: uppercase;
+
+  margin: 0;
+
+  z-index: 1;
+  transition: $tran;
+}
+
+.film_card_big .about {
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
+
+  z-index: 1;
+  transition: $tran;
+}
+
+.film_card_big .type {
+  font-family: $secondFont;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+
+  z-index: 1;
+  transition: $tran;
+
+  margin-top: 15px;
+}
+
+.film_card_big .proj {
+  position: absolute;
+  font-family: $secondFont;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  bottom: 20px;
+
+  z-index: 1;
+  transition: $tran;
+
+  justify-self: end;
+}
+
+.film_card_big .film_bg {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-20px, -20px);
+  opacity: 0;
+
+  transition: $tran;
+}
+
+.film_card_big:hover .film_bg {
+  opacity: 1;
+}
+
+.film_card_big:hover .name,
+.film_card_big:hover .about,
+.film_card_big:hover .type,
+.film_card_big:hover .proj {
+  color: white;
+}
+
+// ===============================
+
+.film_card_small {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row: 1fr;
+  grid-column: 1fr;
+  padding: 20px;
+
+  width: 360px;
+  height: 250px;
+
+  margin-top: 20px;
+
+  border: solid 1px $black;
+  overflow: hidden;
+}
+
+.film_card_small h4,
+.film_card_small h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.film_card_small .name {
+  font-family: $mainFont;
+  font-weight: 900;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 0;
+
+  z-index: 1;
+  transition: $tran;
+}
+
+.film_card_small .type {
+  font-family: $secondFont;
+  font-weight: 600;
+  font-size: .875em;
+  text-transform: uppercase;
+
+  z-index: 1;
+  transition: $tran;
+
+  margin-top: 15px;
+}
+
+.film_card_small .proj {
+  position: absolute;
+  font-family: $secondFont;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  bottom: 20px;
+
+  z-index: 1;
+  transition: $tran;
+
+  justify-self: end;
+}
+
+.film_card_small .film_bg {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-20px, -20px);
+  opacity: 0;
+
+  transition: $tran;
+}
+
+.film_card_small:hover .film_bg {
+  opacity: 1;
+}
+
+.film_card_small:hover .name,
+.film_card_small:hover .about,
+.film_card_small:hover .type,
+.film_card_small:hover .proj {
+  color: white;
+}

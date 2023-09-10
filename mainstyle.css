@@ -616,6 +616,7 @@ path {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 400px;
   background-image: url("./img/vector/bg_conect.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -695,7 +696,7 @@ path {
   text-decoration: none;
   text-transform: none;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #272727;
   width: 186px;
@@ -904,4 +905,253 @@ path {
 .team h5 {
   width: 100px;
   height: 50px;
+}
+
+.casting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  font-size: 16px;
+  margin-top: 70px;
+  padding: 30px 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 100px 230px 150px 202px;
+}
+
+.casting h2 {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  align-self: baseline;
+  margin-bottom: 30px;
+}
+
+.casting p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.2em;
+  max-width: 360px;
+  padding: 168px 12px;
+}
+
+.casting .contacts__conection {
+  background-image: url("./img/vector/bg_connect_cast.svg");
+}
+
+.casting .contacts__conection h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.casting h4 {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  align-self: baseline;
+}
+
+.cast_dir {
+  width: 100%;
+}
+
+.cast_dir .titel {
+  align-self: baseline;
+}
+
+.film_card_big {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row: 1fr;
+  grid-column: 1fr;
+  padding: 20px;
+  margin-top: 20px;
+  width: 550px;
+  height: 310px;
+  border: solid 1px #272727;
+  overflow: hidden;
+}
+
+.film_card_big h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.film_card_big .name {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.film_card_big .about {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.film_card_big .type {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: 0.5s;
+  margin-top: 15px;
+}
+
+.film_card_big .proj {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  bottom: 20px;
+  z-index: 1;
+  transition: 0.5s;
+  justify-self: end;
+}
+
+.film_card_big .film_bg {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-20px, -20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.film_card_big:hover .film_bg {
+  opacity: 1;
+}
+
+.film_card_big:hover .name,
+.film_card_big:hover .about,
+.film_card_big:hover .type,
+.film_card_big:hover .proj {
+  color: white;
+}
+
+.film_card_small {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row: 1fr;
+  grid-column: 1fr;
+  padding: 20px;
+  width: 360px;
+  height: 250px;
+  margin-top: 20px;
+  border: solid 1px #272727;
+  overflow: hidden;
+}
+
+.film_card_small h4,
+.film_card_small h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.film_card_small .name {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.film_card_small .type {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: 0.5s;
+  margin-top: 15px;
+}
+
+.film_card_small .proj {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  bottom: 20px;
+  z-index: 1;
+  transition: 0.5s;
+  justify-self: end;
+}
+
+.film_card_small .film_bg {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-20px, -20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.film_card_small:hover .film_bg {
+  opacity: 1;
+}
+
+.film_card_small:hover .name,
+.film_card_small:hover .about,
+.film_card_small:hover .type,
+.film_card_small:hover .proj {
+  color: white;
+}
+
+.big_row,
+.small_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.casting .more_cast,
+.casting .more_plane {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  margin: 40px 512px 230px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #272727;
+  width: 175px;
+  height: 50px;
+  transition: 0.1s;
+}
+
+.casting .more_plane {
+  margin-bottom: 0px;
+}
+
+.casting .more_cast:hover,
+.casting .more_plane:hover {
+  color: #ebebeb;
+  background-color: #7c5ae1;
+  border: #7c5ae1;
 }/*# sourceMappingURL=mainstyle.css.map */

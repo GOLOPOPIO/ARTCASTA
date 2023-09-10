@@ -1,8 +1,8 @@
-import startLang from "./leng.js";
+import startLang, { getLeng } from "./leng.js";
 import startToggle from "./clic.js";
-import toggle from "./clic.js";
 import startPartners from "./partners.js";
 import loadIMG from "./img_load.js";
+import loadFilmsCard from "./film_card.js";
 
 
 const content = document.querySelector(".main__content");
@@ -20,10 +20,13 @@ const loadHome = () => {
 
 const loadCast = () => {
   load(castPage);
+  let leng = getLeng();
+  loadFilmsCard(leng);
 }
 
 const loadTeam = () => {
   load(teamPage);
+  loadIMG();
 }
 const load = (page) => {
   $(content).load(page);
@@ -48,5 +51,5 @@ const start = () => {
   startPartners();
   loadIMG();
 }
-export default start;
 
+export default start;

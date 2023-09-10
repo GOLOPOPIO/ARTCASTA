@@ -1,4 +1,4 @@
-import loadIMG from "./img_load.js";
+import update from "./main.js";
 
 const url_rus =
   "./json/leng_rus.json";
@@ -58,10 +58,8 @@ function setLanguge(json) {
       document.getElementById(key).textContent = json[key];
     }
     catch {
-      // console.log(key, " id error"); 
     }
   }
-  // loadIMG();
 }
 
 const startLeng = () => {

@@ -1,6 +1,3 @@
-
-
-
 let url_json =
   "./json/partners.json";
 let partners = '';
